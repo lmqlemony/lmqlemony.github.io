@@ -3,10 +3,11 @@
 <script src="./jquery.js"></script>
 <script type="text/javascript"> 
 $(document).ready(function(){
-            var zy = "2中国,3香";
-            var zyj = JSON.parse("[\"" + zy.replace(/,/g, "\",\"") + "\"]");
+		//【综艺】中文逗号，分隔
+            var zy = "2变形计，3喜欢你我也是";  
+            var zyj = JSON.parse("[\"" + zy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < zyj.length; i++) {
-                $("div#list").append('<div class="flip">【'+zyj[i].substring(0,1)+'】<a href="#">'+zyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
+                $("div#list").append('<div class="flip">【综艺-周'+zyj[i].substring(0,1)+'】<a href="#">'+zyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
             }
 	$(".flip").each(function() {
 		$(this).click(function(){
