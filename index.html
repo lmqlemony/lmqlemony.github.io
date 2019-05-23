@@ -3,9 +3,7 @@
 <script src="./jquery.js"></script>
 <script type="text/javascript"> 
 $(document).ready(function(){
-            var zy = "
-2中国,3香
-	    ";
+            var zy = "2中国,3香";
             var zyj = JSON.parse("[\"" + zy.replace(/,/g, "\",\"") + "\"]");
             for (var i = 0; i < zyj.length; i++) {
                 $("div#list").append('<div class="flip">【'+zyj[i].substring(0,1)+'】<a href="#">'+zyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
@@ -31,5 +29,5 @@ div.panel{height:480px;display:none;}
 <body bgcolor="black">
     <div id="list"></div>
 	<hr />
-<div>【电影】<a href="https://www.qq.com">我不是药神</a></div>
+<div class="flip">【电影】<a href="https://www.qq.com">我不是药神</a></div>
 </body></html>
