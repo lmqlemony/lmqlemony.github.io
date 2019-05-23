@@ -13,7 +13,7 @@ var dy = "7我只喜欢你，8流浪地球，8你";
             }
             var dyj = JSON.parse("[\"" + dy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < dyj.length; i++) {
-                $("div#list").append('<div class="flid">【电影-'+dyj[i].substring(0,1)+'分】<a href="https://www.xl720.com/?s="'+dyj[i].substring(1)+'>'+dyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
+                $("div#list").append('<div class="flid">【电影-'+dyj[i].substring(0,1)+'分】<a href="https://www.xl720.com/?s='+dyj[i].substring(1)+'">'+dyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
             }
 	$(".flip").each(function() {
 		$(this).click(function(){
