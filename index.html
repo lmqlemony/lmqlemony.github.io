@@ -1,18 +1,8 @@
-
 <!DOCTYPE html><html><head>
 <title>【全剧神器】[星期名称,组合]</title>
 <script src="./jquery.js"></script>
 <script type="text/javascript"> 
 $(document).ready(function(){
-	$("button").click(function () {
-            if (typeof (Storage) !== "undefined") {
-                localStorage.setItem("zy", $("textarea").val());
-                alert("OK，将刷新页面...");
-                window.location.reload();
-            } else {
-                alert("抱歉！您的浏览器不支持 Web Storage ...");
-            }
-	 });
             var zy = "
 2中国,3香
 	    ";
@@ -28,18 +18,6 @@ $(document).ready(function(){
 			 $(".flip").css({"color":"black","border":"solid 1px"});
    			 $(this).children("div").slideDown();
    			 $(this).css({"color":"red","border":"solid 3px red","background":"#999"});
-   			// function p(s) {return s < 10 ? '0' + s: s;}
-   			// var myDate = new Date();
-   			// var year=myDate.getFullYear();
-   			// var month=myDate.getMonth()+1;
-   			// var date=myDate.getDate(); 
-   			// var h=myDate.getHours();
-   			// var m=myDate.getMinutes();
-   			// var s=myDate.getSeconds();
-   			// var now=year+'-'+p(month)+"-"+p(date)+" "+p(h)+':'+p(m);
-   			// var txt = $(this).text();
-   			// localStorage.lastsee=txt+"【"+now+"】";
-   			//$("div#list").append(localStorage.lastsee);
  		 });
 	 });
 });
@@ -53,5 +31,5 @@ div.panel{height:480px;display:none;}
 <body bgcolor="black">
     <div id="list"></div>
 	<hr />
-<div class="flip">【电影】<a href="https://www.qq.com">我不是药神</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>
+<div>【电影】<a href="https://www.qq.com">我不是药神</a></div>
 </body></html>
