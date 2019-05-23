@@ -8,12 +8,12 @@ var zy = "2变形计，3喜欢你我也是";
 var dy = "9流浪地球，9我不是药神";
 var jy = "7我只喜欢你，8铁探";
 //=======================================================================================
-		$("div#list").append('<div class="flip" style="color:#CC00FF">【提示】网页限制，播放后可转高清，或App</div>');
+		$("div#list").append('<div class="flip" style="color:#FFF">【提示】网页限制，播放后可转高清或App</div>');
             var zyj = JSON.parse("[\"" + zy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < zyj.length; i++) {
                 $("div#list").append('<div class="flip"><a href="#">【综艺-周'+zyj[i].substring(0,1)+'】'+zyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
             }
-		$("div#list").append('<hr /><div class="flip" style="color:#CC00FF">【提示】...在浏览器打开，再迅雷边下边播</div>');
+		$("div#list").append('<hr /><div class="flip" style="color:#FFF">【提示】...在浏览器打开，再迅雷边下边播</div>');
             var dyj = JSON.parse("[\"" + dy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < dyj.length; i++) {
                 $("div#list").append('<div class="flid"><a href="https://www.xl720.com/?s='+dyj[i].substring(1)+'">【电影-'+dyj[i].substring(0,1)+'分】'+dyj[i].substring(1)+'</a></div>');
