@@ -13,7 +13,7 @@ var dy = "7我只喜欢你，8流浪地球，8你";
             }
             var dyj = JSON.parse("[\"" + dy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < dyj.length; i++) {
-                $("div#list").append('<div class="flid">【电影-'+dyj[i].substring(0,1)+'分】<a href="#">'+dyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
+                $("div#list").append('<div class="flid">【电影-'+dyj[i].substring(0,1)+'分】<a href="https://www.xl720.com/?s="'+dyj[i].substring(1)+'>'+dyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
             }
 	$(".flip").each(function() {
 		$(this).click(function(){
@@ -21,16 +21,6 @@ var dy = "7我只喜欢你，8流浪地球，8你";
    			 $(this).children("div").children("iframe").attr("src","https://so.iqiyi.com/so/q_"+$(this).children("a").text());
 			 $(".panel").slideUp();
 			 $(".flip").css({"color":"black","border":"solid 1px"});
-   			 $(this).children("div").slideDown();
-   			 $(this).css({"color":"red","border":"solid 3px red","background":"#999"});
- 		 });
-	 });
-	$(".flid").each(function() {
-		$(this).click(function(){
-   			 $("iframe").attr("src","");
-   			 $(this).children("div").children("iframe").attr("src","https://www.xl720.com/?s="+encodeURI($(this).children("a").text()));
-			 $(".panel").slideUp();
-			 $(".flid").css({"color":"black","border":"solid 1px"});
    			 $(this).children("div").slideDown();
    			 $(this).css({"color":"red","border":"solid 3px red","background":"#999"});
  		 });
