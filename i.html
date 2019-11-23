@@ -9,20 +9,9 @@ $(document).ready(function(){
 //var dy = "8地久天长，6反贪风暴4，8风中有朵雨做的云，7老师·好，9阿波罗11号，7熊出没·原始时代，6一吻定情，7疯狂的外星人，9流浪地球，9我不是药神";
 //var jy = "9切尔诺贝利，7婚姻合伙人，8我们都要好好的，9我们与恶的距离，8向西闻记，8婚内情，7机动部队，7诡探前传，7我只喜欢你，8铁探";
 //=======================================================================================
-		$("div#list").append('<div class="flip" style="color:#FFF">【提示】网页限制，播放后可转高清或App</div>');
             var zyj = JSON.parse("[\"" + zy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < zyj.length; i++) {
                 $("div#list").append('<div class="flip">【综艺-周'+zyj[i].substring(0,1)+'】<a href="#">'+zyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
-            }
-		$("div#list").append('<hr /><div class="flip" style="color:#FFF">【提示】...在浏览器打开，再迅雷边下边播</div>');
-            var dyj = JSON.parse("[\"" + dy.replace(/，/g, "\",\"") + "\"]");
-            for (var i = 0; i < dyj.length; i++) {
-                $("div#list").append('<div class="flid"><a href="https://m.xl720.com/?s='+dyj[i].substring(1)+'">【电影-'+dyj[i].substring(0,1)+'分】'+dyj[i].substring(1)+'</a></div>');
-            }
-		$("div#list").append('<hr />');
-            var jyj = JSON.parse("[\"" + jy.replace(/，/g, "\",\"") + "\"]");
-            for (var i = 0; i < jyj.length; i++) {
-                $("div#list").append('<div class="flid"><a href="https://m.xl720.com/?s='+jyj[i].substring(1)+'">【剧集-'+jyj[i].substring(0,1)+'分】'+jyj[i].substring(1)+'</a></div>');
             }
 		$("div#list").append('<hr /><div class="flip" style="color:#FFF">【提示】下面是跳过迅雷版权限制的资源</div>');
 	$(".flip").each(function() {
