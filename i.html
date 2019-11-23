@@ -13,7 +13,6 @@ $(document).ready(function(){
             for (var i = 0; i < zyj.length; i++) {
                 $("div#list").append('<div class="flip">【综艺-周'+zyj[i].substring(0,1)+'】<a href="#">'+zyj[i].substring(1)+'</a><div class="panel"><iframe src="" height="99%" width="99%"></iframe></div></div>');
             }
-		$("div#list").append('<hr /><div class="flip" style="color:#FFF">【提示】下面是跳过迅雷版权限制的资源</div>');
 	$(".flip").each(function() {
 		$(this).click(function(){
    			 $("iframe").attr("src","");
@@ -39,9 +38,4 @@ div.panel{height:450px;display:none;}
 	<a href="https://i.y.qq.com/n2/m/share/details/toplist.html?ADTAG=myqq&from=myqq&channel=10007100&id=26"><font size="42px" color="white">[音乐]</font></a>
 	<a href="./zabout.html"><font size="42px" color="white">[说明]更新中...</font></a>
     <div id="list"></div>
-	
-<div class="flip"><a href="">
-【电影】</a></div>
-<div class="flip"><a href="magnet:?xt=urn:btih:AECF711F4E3A3CF497BC311BD3BAEA78E07D0A5F">
-【剧集-8】破冰行动（分集下载）</a></div>
 </body></html>
