@@ -8,7 +8,7 @@ $(document).ready(function(){
 		//$("div#list").append('<div class="flip" style="color:#FFF">【提示】网页限制，播放后可转高清或App</div>');
             var zyj = JSON.parse("[\"" + zy.replace(/，/g, "\",\"") + "\"]");
             for (var i = 0; i < zyj.length; i++) {
-                $("div#list").append('<div class="flip">【综艺-周'+zyj[i].substring(0,1)+'】<a target="_blank"  href="https://app.movie/index.php/vod/search.html?wd='+encodeURI(zyj[i].substring(6))+'">'+zyj[i].substring(6)+'</a><a target="_blank"  href="http://www.k1k.cc/zy/'+zyj[i].substring(1,5)+'">...[v]...</a></div>');
+                $("div#list").append('<div class="flip">【综艺-周'+zyj[i].substring(0,1)+'】<a target="_blank"  href="https://app.movie/index.php/vod/search.html?wd='+encodeURI(zyj[i].substring(6))+'">'+zyj[i].substring(6)+'</a><a target="_blank"  href="http://www.k1k.cc/zy/'+zyj[i].substring(1,6)+'">...[v]...</a></div>');
             }
 		$("div#list").append('<hr />');
             var dyj = JSON.parse("[\"" + dy.replace(/，/g, "\",\"") + "\"]");
